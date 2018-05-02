@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="{{ site.baseurl }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <title>{{ page.title }}</title>
+    <link href="{{ "/atom.xml" | relative_url }}" rel="alternate" type="application/atom+xml">
+    <link href="{{ "/rss.xml" | relative_url }}" rel="alternate" type="application/rss+xml">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/semantic/dist/semantic.min.css" | relative_url }}">
+    <script src="{{ "/assets/jquery/dist/jquery.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/semantic/dist/semantic.min.js" | relative_url }}"></script>
+
+    <script>
+      $(document)
+        .ready(function() {
+          $('.ui.sidebar')
+            .sidebar('attach events', '.toggle.item')
+          ;
+          $('.ui.accordion')
+            .accordion()
+          ;
+        })
+      ;
+    </script>
+
+    <style>
+      h1, h2, h3 {
+        margin-bottom: 0.25em;
+      }
+
+      article > h1.ui.header a {
+        color: rgba(0, 0, 0, 0.87);
+      }
+
+      article > h1.ui.header {
+        margin-bottom: -0.25em;
+      }
+
+      main > .ui.basic.vertical.segment:first-of-type {
+        margin-top: 4rem;
+      }
+
+      main > .ui.basic.vertical.segment:last-of-type {
+        margin-bottom: 4rem;
+      }
+    </style>
+
+    {% include analytics.html %}
+  </head>
+  <body>
+    <div class="ui grid">
+      {% include navigation.html %}
+      <div class="row">
+        <div class="column">
+          <div class="ui top padded text container">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include disqus_count.html %}
+  </body>
+</html>

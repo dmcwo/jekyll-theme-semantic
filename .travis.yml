@@ -1,0 +1,32 @@
+language: ruby
+rvm:
+  - 2.4
+before_install:
+  - npm install semantic-ui-css
+  - mkdir -p assets/jquery/
+  - cp node_modules/jquery/LICENSE.txt assets/jquery/
+  - cp -r node_modules/jquery/dist assets/jquery/
+  - mkdir -p assets/semantic/dist/
+  - cp node_modules/semantic-ui-css/LICENSE assets/semantic/
+  - cp -r node_modules/semantic-ui-css/components assets/semantic/dist/
+  - cp node_modules/semantic-ui-css/semantic*.css assets/semantic/dist/
+  - cp node_modules/semantic-ui-css/semantic*.js assets/semantic/dist/
+  - cp -r node_modules/semantic-ui-css/themes assets/semantic/dist/
+  - npm install -g lorem-ipsum
+  - mkdir -p _posts/
+  - mv _posts/0000-00-00-lorem-ipsum.md _posts/`date +%F`-lorem-ipsum.md
+  - lorem-ipsum 5 paragraphs >> _posts/`date +%F`-lorem-ipsum.md
+script:
+  - jekyll build
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    on:
+      branch: master
+    local-dir: _site
+  - provider: rubygems
+    api_key: $API_KEY
+    skip-cleanup: true
+    on:
+      tags: true

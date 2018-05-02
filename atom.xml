@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://rcvalle.github.io/jekyll-theme-semantic/</id>
+  <link href="https://rcvalle.github.io/jekyll-theme-semantic/"/>
+  <link href="https://rcvalle.github.io/jekyll-theme-semantic/atom.xml" rel="self"/>
+  <rights></rights>
+  <subtitle>A Semantic UI -based Jekyll theme.</subtitle>
+  <title>jekyll-theme-semantic</title>
+  <updated>2018-05-02T00:00:00+00:00</updated>
+  
+    <entry>
+      <author>
+        <name></name>
+      </author>
+      
+      <content type="html">
+        &lt;p&gt;Incididunt consequat deserunt nostrud mollit qui non ex amet. Amet enim ea duis non magna irure cupidatat. Officia sit est irure occaecat deserunt cupidatat. Irure Lorem irure Lorem quis ex in do adipisicing et do ut aliquip. Ullamco consectetur eiusmod et consequat pariatur.&lt;/p&gt;
+
+&lt;p&gt;Consectetur Lorem cupidatat elit qui dolor nisi anim. Laboris aliqua ut consequat velit fugiat aliquip pariatur commodo velit eu qui nostrud quis. Tempor nostrud eiusmod labore et. Cupidatat id mollit reprehenderit labore laboris amet laborum anim deserunt incididunt. Ea enim amet enim ullamco ad deserunt ipsum. Est id est laborum enim id excepteur sunt magna veniam dolore eu aliquip consequat. Anim nostrud id ut veniam eu incididunt do dolore eiusmod deserunt.&lt;/p&gt;
+
+&lt;p&gt;Incididunt ad sint quis dolor mollit sunt quis. Esse labore amet sunt qui officia fugiat exercitation excepteur consequat incididunt duis ullamco eu quis. Aute labore aute mollit adipisicing exercitation labore eu nostrud. Anim dolor magna dolor aute id mollit tempor adipisicing fugiat ea. Commodo Lorem minim occaecat veniam occaecat exercitation reprehenderit occaecat. Nulla amet do occaecat do sit proident ut mollit.&lt;/p&gt;
+
+&lt;p&gt;Proident nulla occaecat irure deserunt ea excepteur labore labore aute. Nisi sint cillum occaecat enim cupidatat proident ea ipsum reprehenderit ut pariatur. Fugiat consectetur occaecat enim ex reprehenderit amet consequat quis incididunt quis in nulla. Irure laborum non proident consectetur commodo culpa dolor est voluptate.&lt;/p&gt;
+
+&lt;p&gt;Sint voluptate cupidatat velit eu fugiat. Cillum magna in consequat enim sunt velit qui qui. Veniam quis laboris quis laboris sunt qui incididunt sit in amet est eiusmod cillum. Aute qui ut esse laborum reprehenderit sunt excepteur sunt eiusmod esse cupidatat id. Adipisicing nulla pariatur cupidatat ex Lorem culpa. Ea ipsum sunt voluptate veniam adipisicing reprehenderit labore commodo minim laborum qui nostrud non.&lt;/p&gt;
+
+      </content>
+      <id>https://rcvalle.github.io/jekyll-theme-semantic/2018/05/02/lorem-ipsum/</id>
+      <link href="https://rcvalle.github.io/jekyll-theme-semantic/2018/05/02/lorem-ipsum/"/>
+      <published>2018-05-02T00:00:00+00:00</published>
+      <title>Lorem Ipsum</title>
+      <updated>2018-05-02T00:00:00+00:00</updated>
+    </entry>
+  
+</feed>

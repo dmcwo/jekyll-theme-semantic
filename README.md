@@ -39,12 +39,22 @@ To use jekyll-theme-semantic:
 3. Copy the `index.html` file from the theme's directory to your Jekyll
    site's directory.
 
-4. Optional: Add the following line to your Jekyll site's `_config.yml` file
+4. Add the following line to your Jekyll site's `_config.yml` file, replacing the number with the number of posts you would like to appear on each page:
+
+       paginate: 5
+
+5. Make sure `- jekyll-paginate` is listed in your Jekyll site's `_config.yml` file under `plugins`:
+
+       plugins:
+         - jekyll-feed
+         - jekyll-paginate
+
+6. Optional: Add the following line to your Jekyll site's `_config.yml` file
    and replace `UA-XXXXX-Y` by your Analytics tracking ID:
 
        analytics: UA-XXXXX-Y
 
-5. Optional: Add the following line to your Jekyll site's `_config.yml` file
+7. Optional: Add the following line to your Jekyll site's `_config.yml` file
    and replace `EXAMPLE` by your Disqus shortname:
 
        disqus_shortname: EXAMPLE
